@@ -10,6 +10,11 @@
     display: grid;
     grid-template-rows: 10vh 80vh 10vh;
     grid-template-columns: 30vw 70vw;
+    grid-template-areas: 
+    "hd hd"
+    "sd mn"
+    "ft ft"
+    ;
 }
 
 #hd {
@@ -92,4 +97,55 @@
 
 #item06 {
     grid-area: item06;
+}
+
+/*_______________________small devices____________________*/
+@media screen and (max-width: 375px) {
+    #container {
+        background-color: aquamarine;
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 20vh 40vh 30vh 10vh;
+        grid-template-columns: 100vw;
+        grid-template-areas: 
+        "hd"
+        "mn"
+        "sd"
+        "ft"
+        ;
+
+    }
+
+    #hd {
+        background-color: blueviolet;
+        height: 20vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        grid-area: hd;
+    }
+    
+    #mn {
+        background-color: cadetblue;
+        width: 100vw;
+        height: 40vh;
+        grid-area: mn;
+    }
+    
+    #sd {
+        background-color: cornflowerblue;
+        height: 30vh;
+        width: 100vw;
+        grid-area: sd;
+    }
+    
+    #ft {
+        background-color: dimgrey;
+        height: 10vh;
+        width: 100vw;
+        grid-area: ft;
+    }
+    
 }
