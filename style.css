@@ -125,6 +125,8 @@
         align-items: center;
         justify-content: space-evenly;
         grid-area: hd;
+        display: flex;
+        flex-direction: column;
     }
     
     #mn {
@@ -147,5 +149,83 @@
         width: 100vw;
         grid-area: ft;
     }
+
+    #logo {
+        border: 1px solid #000;
+        height: 14vh;
+        width: 100vw;
+        background-color: burlywood;
+    }
     
+    #navbar {
+        border: 1px solid #000;
+        height: 6vh;
+        width: 100vw;
+        background-color: violet;
+    }
+    
+}
+
+/*_______________________medium devices____________________*/
+@media screen and (min-width: 376px) and (max-width: 799px) {
+    #container {
+        background-color: aquamarine;
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 20vh 70vh 10vh;
+        grid-template-columns: 25vw 25vw 25vw 25vw;
+        grid-template-areas: 
+        "hd hd hd hd"
+        "sd sd mn mn"
+        "ft ft ft ft"
+        ;
+    }
+
+    #hd {
+        background-color: blueviolet;
+        height: 20vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        grid-area: hd;
+        display: flex;
+
+    }
+    
+    #mn {
+        background-color: cadetblue;
+        width: 50vw;
+        height: 70vh;
+        grid-area: mn;
+    }
+    
+    #sd {
+        background-color: cornflowerblue;
+        height: 70vh;
+        width: 50vw;
+        grid-area: sd;
+    }
+    
+    #ft {
+        background-color: dimgrey;
+        height: 10vh;
+        width: 100vw;
+        grid-area: ft;
+    }
+
+    #logo {
+        border: 1px solid #000;
+        height:20vh;
+        width: 20vw;
+        background-color: burlywood;
+    }
+    
+    #navbar {
+        border: 1px solid #000;
+        height: 20vh;
+        width: 60vw;
+        background-color: violet;
+    }
 }
